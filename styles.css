@@ -1,58 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+html {
+	color: #D3D3D3;
+}
+
 body {
 	margin: 0;
 	background-color: #1151B4;
-	font-family: Roboto;
-	
+	font-family: Roboto;	
 }
 
 .wraper {
 	display: flex;
-	justify-content: center;
-	height: 100vh;
+	justify-content: center;	
 	align-items: center;
+	height: 100vh;
 }
 
 header {
 	text-align: left;
-	width: 50vw;
+	width: 45vw;
+
 }
 
 h1{
-	color: white;
-	
+	color: white;	
 	font-size: 36px;
+	max-width: 600px;
 }
 
-p {
-	color: #D3D3D3;
-	max-width: 500px
+h1:hover{
+	
+}
+
+p {	
+	max-width: 500px;	
+}
+
+nav {	
+	padding-top: 30px; /* Adds 10 pixels of padding to the top */
+    padding-bottom: 50px;
+   
+}
+
+nav ul {
+	
 }
 
 ul {
 	list-style-type: none;
 	padding: 0; /* Remove default padding */    
 }
-nav {
-	padding-top: 30px; /* Adds 10 pixels of padding to the top */
-    padding-bottom: 50px;
-}
 
 nav ul li{
-	padding-top: 10px; /* Adds 10 pixels of padding to the top */
-    padding-bottom: 10px;
+	padding-top: 20px; /* Adds 10 pixels of padding to the top */
+    padding-bottom: 20px;
 }
 
-nav ul li a {
+a {
 	text-decoration: none;
+}
+
+.menu {
+	position: absolute;/*Without it the h1 and p shake when on hover*/
 	color: #D3D3D3;
-	text-transform: uppercase;
-	font-size: 16px;
-	
+	text-transform: uppercase;	
+    font-size: 15px;   
+    transition: font-size 0.3s; 
+}
+
+.menu:hover {
+    font-size: 17px;
+    color: white; 
+}
+
+#menu-about:target {
+    font-size: 18px;
+}
+
+.menu-cc{
+	width: 100px;
+	margin-bottom: 10px;
 }
 
 .fa-linkedin {
-    color: #D3D3D3;
-    font-size: 24px;
+
+    color: white;
+    font-size: 24px;   
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust to your preferred size */
+    height: 40px; /* Adjust to your preferred size */
+    border-radius: 50%; /* Makes the container round */    
+    transition: background-color 0.3s, transform 0.3s; /* Add transitions for a smooth hover effect */
+}
+
+.fa-linkedin:hover {
+	background-color: #0077B5; /* Change to your desired hover background color */
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+main {		
+    overflow-y: auto; /* Enable vertical scroll when content overflows */    
+    padding: 20px; /* Add padding for spacing (adjust as needed) */   
+    max-height: 70vh;  
+    scroll-behavior: smooth;
+}
+
+main::-webkit-scrollbar {
+	 display: none;
+}
+
+section {
+	margin-bottom: 80px;
+}
+
+#experience {
+	font-size: 14px;   
+}
+
+.p-exps{
+	margin-bottom: 30px;
+}
+
+#resume {	
+	color: #404040;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 5px 15px;
+	outline: none;	
+	cursor: pointer;	
+	transition: all 0.3s;
+	border-radius: 10px;
+	border: none;
+}
+
+#resume:hover {
+	padding: 5px 20px;
+}
+
+.fas {
+	padding-left: 10px;
 }

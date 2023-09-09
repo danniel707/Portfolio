@@ -14,21 +14,31 @@
 				<h1>Daniel Fernando Rodriguez Palacios</h1>
 				<p>Electronic Engineer with five years of experience in
 	software development, data bases and software testing.</p>		
-				<nav class="menu">
+				<nav >
 					<ul>
 						<li>
-							<a href="">
-								<span>about</span>
+							<a href="#about" >
+								<span class="menu" id="menu-about">about</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
-								<span>experience</span>
+							<a href="#experience">
+								<span class="menu" id="menu-exp">experience</span>
+							</a>
+						</li>
+						<li class="menu-cc">
+							<a href="#certifications">
+								<span class="menu menu-cc" >Curses & Certifications</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
-								<span>projects</span>
+							<a href="#languages">
+								<span class="menu">Languages</span>
+							</a>
+						</li>
+						<li>
+							<a href="#projects">
+								<span class="menu">projects</span>
 							</a>
 						</li>
 					</ul>
@@ -36,24 +46,90 @@
 			</div>
 			<ul>
 				<li>
-					<a href="https://www.linkedin.com/in/daniel-rodriguez-81b71834"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://www.linkedin.com/in/daniel-rodriguez-81b71834"><i class="fa-brands fa-linkedin "></i></a>
 				</li>			
 			</ul>		
 		</header>
-		<main>
+		<main id="main">
 			<section>
-				<div>
-					<h2>Aboutttttttttttttttttttttttttttttttttttttttttttttt</h2>
+				<div >
+					<p id="about">I have worked in different areas such as video management, ERP, databases for mobile telecomunications, project management, QA for a major sports event and approval work flow system for the goverment in countries such as Colombia, Brasil and China</p>
 					<p></p>
 				</div>
 			</section>
-			<section>
+			<section id="experience">
+				<div>					
+					<p class="p-exps">Software Engineer
+National Administrative Department of Statistics (DANE)
+January - December 2018, Bogota), Colombia
+Responsible for leading the development of the web application used to
+manage and track the approval and publication process of DANE's
+investigations. The application was developed in Python, JavaScript and
+Django framework. In charge of the entire development process,
+gathering user requirements, backend development, coordinating with
+frontend designers, and implementing the application.</p>
+					<p class="p-exps">QA Analyst
+Rio 2016 - Olympic and Paralympic Games Organizing Committee
+October 2015 - August 2016, Rí)o de Janeiro, Brasil
+Planning, management and execution of the testing process of the results
+system for the Olympic Games. Supervision of the results team,
+performing quality control of the information sent to the public and
+clients during the live broadcasts of the Olympic Games. Ensuring that
+the requirements demanded by Rio 2016's main clients, such as the
+International Olympic Committee, the International Federation, and the
+Olympic Broadcast Services, were satisfactorily fulfilled.</p>
+				<p class="p-exps">Software Developer
+Project Builder
+September 2014 - September 2015 Rí)o de Janeiro, Brasil
+Development and maintenance of a project management software, using
+ASP, Visual Basic, Grails Framework, and Groovy. Developed new
+functionalities, integrated with other applications using RESTful
+architecture, implemented customizations required by the client, and
+improved software performance. Projects were developed using the agile
+SCRUM methodology.</p>
+				<p class="p-exps">Test Engineer
+Centling Technologies (Alcatel-Lucent)
+April 2013 - October 2013 Qingdao, China
+Analysis and execution of regression cases for the HSS entity of the IMS
+architecture with Alcatel-Lucent 3G technology.</p>
+				<p class="p-exps">Software Engineer
+Mind de Colombia
+September 2012 - February 2013 Bogota), Colombia
+In charge of developing and debugging code for multiple clients' ERP
+using Eclipse and JavaScript. The scripts were loaded and used on the
+cloud-based business software, NetSuite.</p>
+				<p  class="p-exps">Software Developer
+Start&IT
+January 2012 - June 2012 Bogota), Colombia
+Development of specialized software for managing, uploading and
+searching videos for the prosecutor's office using .NET Framework 4.0,
+C# and MS SQL Server, participating in all phases of the software
+development process including database modeling, implementation of
+web services, design standard (MVC2) and release to production.</p>
+				</div>
+				<p class="p-exps">Data Manager Trainee
+IBM
+February 2011 - August 2011 Bogota), Colombia
+Management of DB/2 databases in Linux, AIX and Windows. Version
+upgrades, database migration, backup and recovery, performance
+monitoring and tuning.</p>
+			<div>
+				<a  href="CV DanielRodriguez.pdf"><button id="resume">View Full Résumé<span class="fas fa-angle-right"></span></button></a>
+			</div>
+			</section>
+			<section id="certifications">
 				<div>
-					<h2>experience</h2>
+					<h2>Certifications</h2>
 					<p></p>
 				</div>
 			</section>
-			<section>
+			<section id="languages">
+				<div>
+					<h2>Languages</h2>
+					<p></p>
+				</div>
+			</section>	
+			<section id="projects">		
 				<div>
 					<h2>projects</h2>
 					<p></p>
@@ -61,5 +137,6 @@
 			</section>
 		</main>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>
