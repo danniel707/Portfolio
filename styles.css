@@ -19,10 +19,10 @@ body {
 	padding: 0;
 }
 
-header {	
-	float: right; /* Align the header to the right */  
-    margin-left: 110px;
-
+header {		
+    margin-left: 150px;     
+    padding-top: 20px;
+     
 }
 
 h1{
@@ -41,9 +41,7 @@ p {
 }
 
 nav {	
-	padding-top: 30px; /* Adds 10 pixels of padding to the top */
-    padding-bottom: 50px;
-   
+	padding: 0px; /* Adds 10 pixels of padding to the top */   
 }
 
 nav ul {
@@ -77,121 +75,8 @@ a {
 	margin-bottom: 10px;
 }
 
-.fa-linkedin {
-
-    color: white;
-    font-size: 24px;   
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px; /* Adjust to your preferred size */
-    height: 40px; /* Adjust to your preferred size */
-    border-radius: 50%; /* Makes the container round */    
-    transition: background-color 0.3s, transform 0.3s; /* Add transitions for a smooth hover effect */
-}
-
-.fa-linkedin:hover {
-	background-color: #0077B5; /* Change to your desired hover background color */
-    transform: scale(1.2); /* Scale up the icon on hover */
-}
-
-
-
-
-main {		
-    overflow-y: auto; /* Enable vertical scroll when content overflows */    
-    padding: 90px; /* Gives the vertical space*/   
-    max-height: 70vh;  
-    scroll-behavior: smooth;
-    margin:0;
-}
-
-main::-webkit-scrollbar {
-	 display: none;*/
-}
-
-section {
-	margin-bottom: 80px;
-}
-
-.about-p {
-	margin-bottom: 10px;
-	line-height: 1.5;
-}
-
-
-
-#experience {
-	font-size: 14px;   
-}
-
-.divs-exps {	
-	margin-bottom: 20px;
-	border: 10px solid transparent;
-    border-radius: 10px;   
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-/*.divs-exps:hover{	
-	box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);	//Implemented in JS
-}*/
-
-.p-job-title-size {
-	font-size: 16px;
-}
-
-.p-header-exps {	
-	color: #EAEAEA		
-}
-
-.p-exps{
-	margin-top: 10px;
-	padding: 0;
-}
-
-.p-locations{
-	color: #B7B7B7;
-}
-
-.fa-solid{
-	padding-left: 10px;
-	color: #D3D3D3;
-}
-
-#skills{
-	display: flex;
-}
-
-#skills li {
-	font-size: 12px;
-	margin-right: 10px;
-	padding: 5px 15px;
-	background-color: #87CEEB;
-	color: black;
-	border-radius: 10px;
-	border: none;
-}
-
-.skills-items-lang {
-	background-color: #7094DD !important;
-}
-
-
-
-#ul-curses-certs{
-
-}
-
-#ul-curses-certs li {
-	display: flex;
-	margin-bottom: 10px;
-}
-
-img{
-	width: 100px;
-	height: 100px;	
-	border-radius: 10px;
-	margin-right: 20px;
+.cont-resume{
+	margin-top: 30px;
 }
 
 #resume {	
@@ -212,4 +97,232 @@ img{
 
 .fas {
 	padding-left: 10px;
+}
+
+.fa-linkedin {
+    color: white;
+    font-size: 24px;       
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust to your preferred size */
+    height: 40px; /* Adjust to your preferred size */
+    border-radius: 50%; /* Makes the container round */    
+    transition: background-color 0.3s, transform 0.3s; /* Add transitions for a smooth hover effect */
+}
+
+.fa-linkedin:hover {
+	background-color: #0077B5; /* Change to your desired hover background color */
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+
+
+
+main {		
+    overflow-y: auto; /* Enable vertical scroll when content overflows */    
+    padding: 90px; 
+    max-height: 72vh;  
+    scroll-behavior: smooth;
+    margin-left: 50px;
+   
+}
+
+main::-webkit-scrollbar {
+	 display: none;*/
+}
+
+section {
+	margin-bottom: 80px;
+}
+
+
+.about-p {
+	margin-bottom: 10px;
+	line-height: 1.5;
+	margin-left: 20px;
+}
+
+
+
+#experience {
+	font-size: 14px;   
+}
+
+.containers {	
+	margin-bottom: 20px;
+	padding: 10px;
+	padding-bottom: 0px;
+	border: 10px solid transparent;
+    border-radius: 10px;   
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/*.containers:hover{	
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);	//Implemented in JS
+}*/
+
+.p-title-size {
+	font-size: 16px;
+}
+
+.p-header-exps {	
+	color: #EAEAEA		
+}
+
+.p-content{
+	margin-top: 10px;
+	padding: 0;
+}
+
+.p-locations{
+	color: #B7B7B7;
+}
+
+.fa-location-dot{
+	padding-left: 10px;
+	color: #D3D3D3;
+}
+
+.skills{
+	display: flex;
+}
+
+.skills li {
+	font-size: 12px;
+	margin-right: 10px;
+	padding: 5px 15px;
+	background-color: #87CEEB;
+	color: black;
+	border-radius: 10px;
+	border: none;
+}
+
+.skills-lang {
+	background-color: #7094DD !important;
+}
+
+
+
+#education-courses {
+	font-size: 14px;   
+}
+
+.div-li-certs {
+	display: flex;
+	padding-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center;
+    margin-right: 20px;
+}
+
+.grid-container a {
+    margin-bottom: 10px; /* Adjust the spacing between the first image and the others */
+}
+
+.grid-container img {
+    max-width: 100%; /* Ensure images do not exceed their container width */
+}
+
+.cert-icon { 
+	position: relative; 
+	margin-bottom: 20px;
+}
+.cert-icon img { 
+	display: block; 
+}
+
+.cert-icon .fa-square-up-right { 
+	position: absolute; 
+	top:2px; 
+	right:8px; 
+	color: #7094DD ;
+	font-size: 26px; 
+}
+
+.fix-square-pos{/*For Web Development from Scratch the icon moves to the right*/
+	margin-right: 12px;
+}
+
+.certificate {
+	width: 100px;
+	height: 100px;	
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
+.logo {
+	margin-right: 0px;
+}
+
+.logo img{
+	width: 40px;
+	height: 20px;	
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+ul.course-topics {
+	margin-top: 10px;
+	margin-left: 15px;
+
+}
+
+ul.course-topics li::before {
+    content: "•"; /* You can use the Unicode character for a square bullet (•) */
+    color: white; /* Set the color of the bullet points */
+    margin-right: 10px; /* Add some spacing between the bullet and the list item text */
+
+}
+
+ul.course-topics li{
+	text-indent: -15px;
+}
+
+
+
+.education{	
+	margin-top: 50px;
+	text-align: center;
+}
+
+.logo-education {
+	width: 130px;
+	height: 130px;	
+	border-radius: 10px;
+	margin-bottom: 20px;	
+}
+
+.education-content{
+	 margin-left: 5px;
+	 font-size: 1.1rem;
+	 padding-bottom: 10px;
+}
+
+
+
+.container-langs{
+	display: flex;
+	justify-content: center;
+	padding-left: 40px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.language {
+	margin-top: 30px;
+	margin-right: 50px;	
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+
+footer{
+	margin-top: 100px;
+	font-size: 13px;
 }

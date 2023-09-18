@@ -12,7 +12,7 @@
 		<header>
 			<div>			
 				<h1>Daniel Fernando Rodriguez Palacios</h1>
-				<p>Electronic Engineer with five years of experience in
+				<p>Electronic Engineer with experience in
 	software development, data bases and software testing.</p>		
 				<nav >
 					<ul>
@@ -27,61 +27,60 @@
 							</a>
 						</li>
 						<li class="menu-cc">
-							<a href="#curses-certs">
-								<span class="menu menu-cc" id="menu-curses-certs" >Curses & Certifications</span>
+							<a href="#education-courses">
+								<span class="menu menu-cc" id="menu-education-courses" >Education & Courses</span>
 							</a>
 						</li>
 						<li>
 							<a href="#languages">
-								<span class="menu">Languages</span>
+								<span class="menu" id="menu-languages">Languages</span>
 							</a>
 						</li>
 						<li>
-							<a href="#projects">
-								<span class="menu">projects</span>
-							</a>
-						</li>
-					</ul>
-				</nav>		
-			</div>
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/in/daniel-rodriguez-81b71834"><i class="fa-brands fa-linkedin "></i></a>
-				</li>			
-			</ul>		
+							<div class="cont-resume">
+								<a  href="CV DanielRodriguez.pdf"><button id="resume">View PDF <span class="fas fa-angle-right"></span></button></a>
+							</div>
+						</li>						
+						<li>							
+							<a href="https://www.linkedin.com/in/daniel-rodriguez-81b71834"><i class="fa-brands fa-linkedin "></i></a>					
+						</li>							
+					</ul>	
+					<div id="message"></div>
+				</nav>						
+			</div>				
 		</header>
 		<main id="main">
 			<section id="about">
-				<div>
-					<p class = "about-p">I have worked in different areas such as video management, ERP, databases for mobile telecomunications, project management, QA for the biggests sports event and approval work flow system for the goverment in countries such as Colombia, Brasil and China. </p>
-					<p class = "about-p">Currently, I mainly work with Python, Django, JavaScript, CSS and HTML and I want to keep inproving my skills in web and software development.</p>
+				<div id="div-about">
+					<p class = "about-p">I have gained diverse experience across various domains , including video management, ERP systems, mobile telecommunications databases, project management, Quality Assurance for a major sports event, and the development of approval workflow systems for a government entity in countries such as Colombia, Brasil and China. </p>
+					<br>
+					<p class = "about-p">Presently, my primary focus revolves around utilizing technologies like Python, Django, JavaScript, CSS, and HTML. My ongoing goal is to continually enhance my proficiency in web and software development.</p>
 				</div>
 			</section>
 			<section id="experience">
 				<div>
-					<div class="divs-exps">					
-						<p class="p-header-exps p-job-title-size">Software Engineer</p>
+					<div class="containers">					
+						<p class="p-header-exps p-title-size">Software Engineer</p>
 						<p class="p-header-exps">National Administrative Department of Statistics (DANE)</p>
 						<p class="p-locations">Bogotá, Colombia<i class=" fa-solid fa-location-dot"></i></p>
-						<p class="p-exps">Responsible for leading the development of the web application used to
-							manage and track the approval and publication process of DANE's
+						<p class="p-content">Responsible for leading the development of the web application used 	to manage and track the approval and publication process of DANE's
 							investigations. The application was developed in Python, JavaScript and
 							Django framework. In charge of the entire development process,
 							gathering user requirements, backend development, coordinating with
 							frontend designers, and implementing the application.</p>
 						<div>
-							<ul id="skills">
-								<li class="skills-items">Python</li>
-								<li class="skills-items">Django</li>
-								<li class="skills-items">JavaScript</li>
+							<ul class="skills">
+								<li>Python</li>
+								<li>Django</li>
+								<li>JavaScript</li>
 							</ul>
 						</div>
 					</div>
-					<div class="divs-exps">
-						<p class="p-header-exps p-job-title-size">QA Analyst</p>
+					<div class="containers">
+						<p class="p-header-exps p-title-size">QA Analyst</p>
 						<p class="p-header-exps">Rio 2016 - Olympic and Paralympic Games Organizing Committee</p>
 						<p class="p-locations">Río de Janeiro, Brasil<i class=" fa-solid fa-location-dot"></i></p>
-						<p class="p-exps"> 
+						<p class="p-content"> 
 							Planning, management and execution of the testing process of the results
 							system for the Olympic Games. Supervision of the results team,
 							performing quality control of the information sent to the public and
@@ -90,146 +89,264 @@
 							International Olympic Committee, the International Federation, and the
 							Olympic Broadcast Services, were satisfactorily fulfilled.</p>
 						<div>
-							<ul id="skills">
-								<li class="skills-items">Quality Asurance</li>	
-								<li class="skills-items-lang">Portuguese</li>
-								<li class="skills-items-lang">English</li>																		
+							<ul class="skills">
+								<li>Quality Asurance</li>	
+								<li class="skills-lang">Portuguese</li>
+								<li class="skills-lang">English</li>		
 							</ul>	
 						</div>
 					</div>						
-					<div class="divs-exps">
-						<p class="p-header-exps p-job-title-size">Software Developer</p>
+					<div class="containers">
+						<p class="p-header-exps p-title-size">Software Developer</p>
 						<p class="p-header-exps">Project Builder</p>
 						<p class="p-locations">Río de Janeiro, Brasil<i class=" fa-solid fa-location-dot"></i></p>
-						<p class="p-exps">						
+						<p class="p-content">						
 							Development and maintenance of a project management software, using
 							ASP, Visual Basic, Grails Framework, and Groovy. Developed new
 							functionalities, integrated with other applications using RESTful
 							architecture, implemented customizations required by the client, and
 							improved software performance. Projects were developed under the agile methodology SCRUM</p>
 						<div>
-							<ul id="skills">
-								<li class="skills-items">Groovy</li>
-								<li class="skills-items">Grails</li>
-								<li class="skills-items">RESTFul</li>
-								<li class="skills-items">SCRUM</li>
-								<li class="skills-items-lang">Portuguese</li>	
+							<ul class="skills">
+								<li>Groovy</li>
+								<li>Grails</li>
+								<li>RESTful</li>
+								<li>SCRUM</li>
+								<li class="skills-lang">Portuguese</li>	
 							</ul>
 						</div>
 					</div>
-					<div class="divs-exps">
-						<p class="p-header-exps p-job-title-size">Test Engineer</p>
+					<div class="containers">
+						<p class="p-header-exps p-title-size">Test Engineer</p>
 						<p class="p-header-exps">Alcatel-Lucent</p>
 						<p class="p-locations">Qingdao, China<i class=" fa-solid fa-location-dot"></i></p>
-						<p class="p-exps">							
+						<p class="p-content">							
 							Analysis and execution of regression cases for the HSS entity of the IMS
 							architecture with Alcatel-Lucent 3G technology.</p>
 						<div>
-							<ul id="skills">
-								<li class="skills-items">DB</li>
-								<li class="skills-items">HSS (IMS)</li>
-								<li class="skills-items">3G</li>	
-								<li class="skills-items-lang">English</li>	
+							<ul class="skills">
+								<li>DB</li>
+								<li>HSS (IMS)</li>
+								<li>3G</li>	
+								<li class="skills-lang">English</li>	
 							</ul>	
 						</div>
 					</div>
-					<div class="divs-exps">
-						<p class="p-header-exps p-job-title-size">Software Engineer</p>
+					<div class="containers">
+						<p class="p-header-exps p-title-size">Software Engineer</p>
 						<p class="p-header-exps">Mind de Colombia</p>
 						<p class="p-locations">Bogotá, Colombia<i class=" fa-solid fa-location-dot"></i></p>
-						<p class="p-exps">							
+						<p class="p-content">							
 							In charge of developing and debugging code for multiple clients ERP
 							using Eclipse and JavaScript. The scripts were loaded and used on the
 							cloud-based business software, NetSuite.</p>
 						<div>
-							<ul id="skills">
-								<li class="skills-items">JavaScript</li>
-								<li class="skills-items">ERP</li>															
+							<ul class="skills">
+								<li>JavaScript</li>
+								<li>ERP</li>									
 							</ul>	
 						</div>
 					</div>
-					<div class="divs-exps">
-						<p class="p-header-exps p-job-title-size">Software Engineer</p>
+					<div class="containers">
+						<p class="p-header-exps p-title-size">Software Engineer</p>
 						<p class="p-header-exps">Start & IT</p>
 						<p class="p-locations">Bogotá, Colombia<i class=" fa-solid fa-location-dot"></i></p>
-						<p  class="p-exps">							
+						<p  class="p-content">							
 							Development of specialized software for managing, uploading and
 							searching videos for the prosecutor's office using .NET Framework 4.0,
 							C# and MS SQL Server, participating in all phases of the software
 							development process including database modeling, implementation of
 							web services, design standard (MVC2) and release to production.</p>
 						<div>
-							<ul id="skills">
-								<li class="skills-items">C#</li>
-								<li class="skills-items">.NET</li>
-								<li class="skills-items">MS SQLServer</li>								
+							<ul class="skills">
+								<li>C#</li>
+								<li>.NET</li>
+								<li>MS SQLServer</li>							
 							</ul>	
 						</div>
 					</div>	
-					<div class="divs-exps">		
-						<p class="p-header-exps p-job-title-size">Data Manager Trainee</p>
+					<div class="containers">		
+						<p class="p-header-exps p-title-size">Data Manager Trainee</p>
 						<p class="p-header-exps">IBM</p>
 						<p class="p-locations">Bogotá, Colombia<i class=" fa-solid fa-location-dot"></i></p>
-						<p class="p-exps">						
+						<p class="p-content">						
 							Management of DB/2 databases in Linux, AIX and Windows. Version
 							upgrades, database migration, backup and recovery, performance
 							monitoring and tuning.</p>
 						<div>
-							<ul id="skills">
-								<li class="skills-items">DB/2</li>
-								<li class="skills-items">Linux</li>
-								<li class="skills-items">AIX</li>								
+							<ul class="skills">
+								<li>DB/2</li>
+								<li>Linux</li>
+								<li>AIX</li>								
 							</ul>
 						</div>	
 					</div>			
 			</section>
-			<section id="curses-certs">
+			<section id="education-courses">
 				<div>
-					<ul id="ul-curses-certs">
-						<li>
-							<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-89c295fc-caaa-444a-b366-aaad0f616481.pdf"><img src="Python Developer-Certificate.jpg" alt="certificate"></a>	
-							<div>
-								<span>Python Developer</span>
-								<p>Descripcion</p>	
-							</div>																			
+					<ul id="ul-education-courses">
+						<li  class="containers">
+							<div class="div-li-certs">
+								<div class="grid-container">
+									<div class="cert-icon">
+										<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-89c295fc-caaa-444a-b366-aaad0f616481.pdf"><img class="certificate" src="img/Python Developer-Certificate.jpg" alt="certificate">
+										<i class="fa-solid fa-square-up-right"></i></a>
+									</div>
+									<div class="logo">
+										<img src="img/UdemyLogo.jpg" alt="logo">
+										<img src="img/ZtoMlogo.png" alt="logo">	
+									</div>
+								</div>
+								<div>
+									<span class="p-title-size">Python Developer</span>
+									<ul	class="course-topics p-content">
+										<li>Python Fundamentals, Data Structures, OOP, Functional Programming</li>
+										<li>Lambdas, Decorators, Generators</li>
+										<li>Testing, Debugging, Error Handling</li>
+										<li>Regular Expressions, Comprehensions, Modules</li>
+										<li>File Processing: Image, CSV, PDFs, Text</li>
+										<li>Web Development, Machine Learning, Data Science</li>
+										<li>Automation with Selenium, Scripting, Web Scraping and BeautifulSoup</li>
+									</ul>								
+								</div>	
+							</div>												
 						</li>
-						<li>				
-							<p>Python and Django Full Stack Web Developer</p>		
-							<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-4ba38f20-81c0-449a-a037-cd15f533ae78.pdf"><img src="Python and Django Full Stack Web Developer-Certificate.jpg" alt="certificate"></a>
+						<li class="containers">
+							<div class="div-li-certs">
+								<div class="grid-container">
+									<div class="cert-icon">
+										<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-4ba38f20-81c0-449a-a037-cd15f533ae78.pdf"><img class="certificate" src="img/Python and Django Full Stack Web Developer-Certificate.jpg" alt="certificate">
+										<i class="fa-solid fa-square-up-right"></i></a>
+									</div>
+									<div class="logo">
+										<img src="img/UdemyLogo.jpg" alt="logo">
+									</div>
+								</div>
+								<div>
+									<span class="p-title-size">Python and Django Full Stack Web Developer</span>
+									<ul	class="course-topics p-content">
+										<li>Concepts, exercises, and practical projects of Python and Django</li>
+										<li>Django Templates, Django Forms, Django Admin Customization</li>
+										<li>Class Based Views</li>
+										<li>HTML5, CSS3, Javascript, jQuery, Bootstrap and Document Object Model</li>
+									</ul>								
+								</div>	
+							</div>
 						</li>
-						<li>				
-							<p>JavaScript Web Projects</p>							
-							<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-be629477-393b-4037-88d1-0c8f1514edca.pdf"><img src="JavaScript Web Projects-Certificate.jpg"></a>
+						<li class="containers">								
+							<div class="div-li-certs">
+								<div class="grid-container">
+									<div class="cert-icon">
+										<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-be629477-393b-4037-88d1-0c8f1514edca.pdf"><img class="certificate" src="img/JavaScript Web Projects-Certificate.jpg" alt="certificate">
+										<i class="fa-solid fa-square-up-right"></i></a>
+									</div>
+									<div class="logo">
+										<img src="img/UdemyLogo.jpg" alt="logo">
+										<img src="img/ZtoMlogo.png" alt="logo">
+									</div>
+								</div>
+								<div>
+									<span class="p-title-size">JavaScript Web Projects</span>
+									<ul	class="course-topics p-content">
+										<li>Modern JavaScript, HTML5 and CSS3</li>
+										<li>Fetch, Async/Await, CORS</li>		
+										<li>Scroll Event Listener, Math Methods, localStorage, CSS Animations</li>
+										<li>DOM, DOM Basics, DOM Forms</li>
+										<li>Text-to-Speech, Advanced HTML Canvas</li>
+										<li>APIs: Screen Capture, Drag and Drop, Quotes, HTML 5 Audio and video</li>
+									</ul>								
+								</div>	
+							</div>
 						</li>	
-						<li>				
-							<p>Web Development from Scratch, HTML, CSS, JS</p>							
-							<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-6558073c-e1e7-41fb-bd56-023fdc719836.pdf"><img src="Desarrollo Web desde Cero HTML5 CSS3 JavaScript Certificado.jpg"></a>
+						<li class="containers">
+							<div class="div-li-certs">
+								<div class="grid-container">
+									<div class="cert-icon">
+										<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-6558073c-e1e7-41fb-bd56-023fdc719836.pdf"><img class="certificate" src="img/Desarrollo Web desde Cero HTML5 CSS3 JavaScript Certificado.jpg" alt="certificate">
+										<i class="fix-square-pos fa-solid fa-square-up-right"></i></a>
+									</div>
+									<div class="logo">
+										<img src="img/UdemyLogo.jpg" alt="logo">
+									</div>
+								</div>
+								<div>
+									<span class="p-title-size">Web Development from Scratch, HTML, CSS, JS</span>
+									<ul	class="course-topics p-content">
+										<li>General concepts of web development</li>
+										<li>HTML5, CSS3, Javascript, and Responsive Design</li>
+										<li>Animations to web pages</li>
+										<li>Functionality and dynamism to web pages through JavaScript</li>
+										<li>Creation of a professional website</li>	
+									</ul>								
+								</div>	
+							</div>
 						</li>
-						<li>				
-							<p>Web and Mobile Designer: Figma, UX/UI</p>							
-							<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-d1266548-e986-41b3-9682-07ab3523f81a.pdf"><img src="UX UI Web and Mobile Designer.jpg"></a>
+						<li class="containers">									
+							<div class="div-li-certs">
+								<div class="grid-container">
+									<div class="cert-icon">
+										<a  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-d1266548-e986-41b3-9682-07ab3523f81a.pdf"><img class="certificate" src="img/UX UI Web and Mobile Designer.jpg" alt="certificate">
+										<i class="fa-solid fa-square-up-right"></i></a>
+									</div>
+									<div class="logo">
+										<img src="img/UdemyLogo.jpg" alt="logo">
+										<img src="img/ZtoMlogo.png" alt="logo">	
+									</div>
+								</div>
+								<div>
+									<span class="p-title-size">Web and Mobile Designer: Figma, UX/UI</span>
+									<ul	class="course-topics p-content">
+										<li>Sketching, Figma basics, user flows, sitemaps</li>
+										<li>Wireframes, Prototyping and Feedback</li>	
+										<li>Design Theory</li>
+										<li>Application Design, Design Systems</li>
+										<li>Using Design System and Hi-Fi prototyping with Figma</li>
+										<li>From Figma to Website</li>
+										<li>HTML, HTML5, CSS, CSS3, CSS Basics, CSS Grid, Flexbox, CSS Animations</li>	
+									</ul>						
+								</div>	
+							</div>
 						</li>
+						<div class="education">
+							<li class="containers">							
+								<div>									
+									<img class="logo-education" src="img/Logo University.jpg" alt="logo">					
+								</div>
+								<div class="education-content">
+									<p class="p-title-size">Electronic Engineer</span> 
+									<p>Pontifical Javeriana University</span>
+								</div>								
+							</li>
+						</div>
 					</ul>
 				</div>
 			</section>
+
 			<section id="languages">
-				<div>
-					<h2>Languages</h2>
-					<p></p>
+				<div class="container-langs containers">
+					<div class="language">					
+						<p class="p-title-size">Spanish</p>
+						<p>Native</p>
+					</div>
+					<div class="language">					
+						<p class="p-title-size">English</p>
+						<p>B2 TOEFL</p>
+					</div>
+					<div class="language">					
+						<p class="p-title-size">Portugues</p>
+						<p>Intermediate</p>
+					</div>
+					<div class="language">					
+						<p class="p-title-size">French</p>
+						<p>Basic</p>
+					</div>
 				</div>
-			</section>	
-			<div>
-				<a  href="CV DanielRodriguez.pdf"><button id="resume">View PDF Résumé<span class="fas fa-angle-right"></span></button></a>
-			</div>
-			<section id="projects">		
-				<div>
-					<h2>projects</h2>
-					<p></p>
-				</div>
-			</section>
+			</section>		
+			<footer>
+				<p>Built and designed with <strong>HTML</strong>, <strong>CSS</strong> and <strong>JS</strong>. 2023</p>
+			</footer>				
 		</main>
 	</div>
-	<script src="script.js"></script>
-	
+	<script src="script.js"></script>	
 </body>
 </html>
