@@ -54,11 +54,13 @@
 					</ul>	
 					<div id="message"></div>
 				</nav>						
-			</div>		
-			<span id="about-span" class="menu-mobile subtitles">About</span>
-			<span id="experience-span" class="menu-mobile subtitles">Experience</span>
-			<span id="education-courses-span" class="menu-mobile subtitles">Education & Courses</span>
-			<span id="language-span" class="menu-mobile subtitles">Languages</span>		
+			</div>	
+			<div class="menu-mobile">	
+				<span id="about-span"  class="subtitles">About</span>
+				<span id="experience-span" class="subtitles">Experience</span>
+				<span id="education-courses-span" class="subtitles">Education & Courses</span>
+				<span id="language-span" class="subtitles">Languages</span>
+			</div>
 		</header>
 		<main id="main">
 			<section id="about">
@@ -67,7 +69,7 @@
 					<br>
 					<p class = "about-p">Presently, my primary focus revolves around utilizing technologies like Python, Django, JavaScript, CSS, and HTML. My ongoing goal is to continually enhance my proficiency in web and software development.</p>
 				</div>
-			</section>
+			</section>			  
 			<section id="experience">
 				<div>
 					<div class="containers">					
@@ -79,14 +81,73 @@
 							Django framework. In charge of the entire development process,
 							gathering user requirements, backend development, coordinating with
 							frontend designers, and implementing the application.</p>
-						<div>
+						<div class="skills-projects">
 							<ul class="skills">
 								<li>Python</li>
 								<li>Django</li>
-								<li>JavaScript</li>
+								<li>JavaScript</li>		
 							</ul>
+							<div class="modal-btn-icon">
+								<button id="openModalBtn" >View Project</button>
+								<i class="fa-solid fa-circle-info"></i>
+							</div>
 						</div>
-					</div>
+					</div>							
+				    <div id="daneModal" class="modal">			
+						<i id="closeModal"  class="close-modal fa-solid fa-circle-xmark"></i>
+						<div class="modal-content">	
+							<button id="btn-left"><span class="fas fa-angle-left"></span></button>
+
+							<div class="slider">								
+								<div class="screen-content">		
+									<h2>Login Screen</h2>
+									<img id="loginScreen" src="img/DaneProject/Login.jpg" alt="Login screen">
+									<p>Authentication system with custom roles for users that restricts access to web site funcionalities.</p>
+								</div>
+								<div class="screen-content">		
+									<h2 id="mainScreenH2">Main Screen</h2>
+									<img id="mainScreen" src="img/DaneProject/MainScreen.jpg" alt="Main screen">
+									<p id="mainScreenParagraph">Content organized in a table with columns that have detailed information and can be organized per column and filters by name or by range of dates. Also each item has a button that displays a modal for editing all teh information and another one for deleting the item. Items can only be created, edited and deleted by a single role.
+								</div>
+								<div class="screen-content">		
+									<h2 id="createItemH2">Create Item Modal</h2>
+									<img id="createItemModal" src="img/DaneProject/CreationModal.jpg" alt="Create Item Modal">
+									<p id="createItemParagraph">There is a button in the bottom of the main screen that displays a modal to create a new item. There are fields for the new item that the information depends on previous fields so asynchronous queries to the DB were implemented using AJAX.</p>
+								</div>
+								<div class="screen-content">		
+									<h2>Detail Item</h2>
+									<img id="detailItem" src="img/DaneProject/detailItem.jpg" alt="Detail Item">
+									<p>Each item has a link to a dedicated page with its information and a layout to carry on the approval process.</p>
+								</div>
+								<div class="screen-content">		
+									<h2>Uploading Files</h2>
+									<img id="uploadFiles" src="img/DaneProject/filesUpload.jpg" alt="Upload Files">
+									<p>For each Item their corresponding files can be upload to start the approval process. They are stored named by version, which means that every time a file is sent for corrections, a new version is created to keep all vertions stored.</p>
+								</div>
+								<div class="screen-content">		
+									<h2>Approval WorkFlow</h2>
+									<img id="approvalWorkFlow" src="img/DaneProject/aprovalWorkFlow.jpg" alt="Approval Work Flow">
+									<p>The approval process can be carried on independent for each file.</p>
+								</div>
+								<div class="screen-content">		
+									<h2>Reports Screen</h2>
+									<img id="reportsScreen" src="img/DaneProject/reportsScreen.jpg" alt="Reports Screen">
+									<p>There is a reports screen where can be seen all of the actions done by the users to the items with date and time. The reports can also be generated in PDF and CSV fils.</p>
+								</div>
+								<div class="screen-content">		
+									<h2>Reports Item Detail</h2>
+									<img id="reportDetail" src="img/DaneProject/reportDetail.jpg" alt="Report Detail">
+									<p>Also reports of the detail of the items with actions done to each corresponding file.</p>
+								</div>
+								<div class="screen-content">		
+									<h2>Users and Custom Information Administration</h2>
+									<img id="dbAdministration" src="img/DaneProject/DBAdministration.jpg" alt="Info Administration">
+									<p>There is a screen where the roles are asigned to each user. Also custom information can be created and edited in this screen. Only one role has access to this screen.</p>
+								</div>
+							</div>						
+							<button id="btn-right"><span class="fas fa-angle-right"></span></button>
+					   </div>   
+					</div>	 				
 					<div class="containers">
 						<p class="p-header-exps p-title-size">QA Analyst</p>
 						<p class="p-header-exps">Rio 2016 - Olympic and Paralympic Games Organizing Committee</p>

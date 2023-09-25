@@ -173,7 +173,37 @@ var  containersElements = document.querySelectorAll('.containers');
 });
 
 
-//--------------------------------------------------------------------------------
+//------------------------------------Modal------------------------------
+
+
+// Attach a click event listener to the "Open Modal" button
+
+const openModal = document.querySelector(".modal-btn-icon");
+const closeModalButton = document.getElementById("closeModal");
+const modal = document.getElementById("daneModal");
+
+openModal.addEventListener("click", () => {
+    modal.classList.add("show");
+});
+
+closeModalButton.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
+
+// Products Slider
+var container = document.querySelector('.slider'),
+    btnLeft = document.getElementById("btn-left"),
+    btnRight = document.getElementById('btn-right')
+
+    btnRight.addEventListener("click", function(){      
+        container.scrollLeft += container.offsetWidth
+    })
+
+    btnLeft.addEventListener("click", function(){       
+        container.scrollLeft -= container.offsetWidth
+    })
+    
+//------------------------------------For Mobile--------------------------------------------
 
 
 var aboutSection = document.getElementById("about");

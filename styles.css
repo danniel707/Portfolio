@@ -188,6 +188,11 @@ section {
 	color: #D3D3D3;
 }
 
+.skills-projects{
+	justify-content: space-between;	
+	display: flex;
+}
+
 .skills{
 	display: flex;
 	flex-wrap: wrap;
@@ -207,7 +212,215 @@ section {
 	background-color: #7094DD !important;
 }
 
+.modal-btn-icon{
+	position: relative;
+	display: inline-block;
+  	transition: transform 0.2s ease-in-out;
+}
 
+.modal-btn-icon:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+#openModalBtn {
+	cursor: pointer;
+	font-size: 11px;	
+	height: 50px;
+	width: 60px;
+	margin-right: 10px;
+	background-color: #2A8BB3;
+	color: white;
+	border-radius: 10px;
+	border: none;	
+	transition: transform 0.3s;
+}
+
+.fa-circle-info{
+	cursor: pointer;
+	font-size: 11px;	
+	top: 4px;
+	right: 14px;
+	position: absolute;
+	color: whitesmoke ;
+	vertical-align: middle;
+  	transition: transform 0.2s ease-in-out;
+	
+}
+
+.modal-btn-icon:hover .fa-circle-info {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.modal {    
+    position: fixed;   
+    left: 60px;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    transform: translateY(100%);/*transform: translateY(100%);*/
+}
+
+.modal.show {
+	transform: translateY(0%);
+	top: 30px;
+	left: 60px;
+}
+
+.close-modal {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 20px;   
+    color: #949494;
+    cursor: pointer;   	
+ 	font-size: 28px;
+  	font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #D3D3D3;  
+  cursor: pointer;
+}
+
+
+.modal-content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.modal-content #btn-left,
+.modal-content #btn-right{
+	position: absolute;
+	height: 40%;
+	width: 50px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	font-size: 40px;
+	margin: 0 10px;
+	color: var(--secondary-color);
+	z-index: 1;
+	outline: none;
+	transition: all 0.3s;
+
+}
+
+.modal-content #btn-left:hover{
+	transform: translateX(-5px);
+	background-color: gray;
+}
+
+.modal-content #btn-right:hover{	
+	transform: translateX(5px);
+	background-color: gray;
+}
+
+.modal-content #btn-left{
+	left: 0;
+}
+
+.modal-content #btn-right{
+	right: 0;
+}
+
+.slider {	
+	display: flex;		
+	margin-left: 90px;
+	margin-right: 90px;
+	overflow: hidden;
+	height: calc(100vh - 80px);/*80px del nav bar*/
+	scroll-behavior: smooth;
+}
+
+.screen-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+	flex-shrink: 0;
+}
+
+.screen-content h2{
+	margin-bottom: 40px;
+}
+
+.screen-content p{
+	margin-top: 20px;
+	text-align: left;
+	
+}
+
+.screen-content #loginScreen{
+	margin-right: 40px;	
+	width: 350px;
+	height: 400px;
+}
+
+#mainScreenH2{
+	margin-top: 40px;
+}
+
+#createItemH2{
+	margin-top: 40px;
+}
+
+.screen-content #mainScreen{
+	width: 630px;
+	height: 400px;	
+}
+
+#mainScreenParagraph {
+	width: 630px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.screen-content #createItemModal{
+	width: 630px;
+	height: 400px;
+}
+
+#createItemParagraph{
+	width: 630px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.screen-content #detailItem{
+	width: 900px;
+	height: 400px;
+}
+
+.screen-content #uploadFiles{
+	width: 600px;
+	height: 400px;
+}
+
+.screen-content #reportsScreen{
+	width: 900px;
+	height: 400px;
+}
+
+.screen-content #reportDetail{
+	width: 900px;
+	height: 400px;
+}
+
+.screen-content #dbAdministration{
+	width: 700px;
+	height: 400px;
+}
 
 #education-courses {
 	font-size: 14px;   
@@ -333,6 +546,7 @@ footer{
 }
 
 
+
 @media screen and (max-width: 768px){
 
 	.lnkd-pdf-mobile-version {
@@ -344,7 +558,8 @@ footer{
 		margin-left: 10px;
 		padding-bottom: 30px;
 	}
-	.menu-mobile{		
+	.menu-mobile{	
+		display: block;	
 		margin-bottom: 10px;
 		padding-top: 0px;		
 	}
@@ -362,6 +577,7 @@ footer{
 
 	h1 {
 		font-size: 22px;
+		margin-right: 10px;
 	}
 
 	nav{
@@ -407,6 +623,10 @@ footer{
 		align-items: center;			
 	}
 
+	.modal-btn-icon{
+		display: none;
+	}
+
 	.div-li-certs{
 		display: block;
 	}
@@ -437,8 +657,12 @@ footer{
 	.container-langs{
 		margin-left: 10px;
 		margin-right: 10px;
-		padding-left: 70px;
+		padding-left: 40px;
 		padding-right: 10px;
+	}
+
+	.language {
+		margin-right: 30px;
 	}
 
 	footer{
