@@ -25,35 +25,35 @@ var textAbout = document.getElementById("menu-about");
 var textExp = document.getElementById("menu-exp");
 var textEducationCourses = document.getElementById("menu-education-courses");
 var textLanguages = document.getElementById("menu-languages")
-//var message = document.getElementById("message")
+var message = document.getElementById("message")
 //When scrolling
 main.addEventListener("scroll", function () {
     // Get the current scroll position
     var mainPosition = main.scrollTop;   
-   // message.innerText = mainPosition
+    //message.innerText = mainPosition.toFixed(1);
     // Select the text element by its ID
-    if (mainPosition <= 190) {       
+    if (mainPosition <= 290) {       
         textAbout.style.color = "white"; 
         textAbout.style.fontSize = "17px"
     } else {
         textAbout.style.color = "#D3D3D3"
         textAbout.style.fontSize = "15px"
     }
-     if (mainPosition > 190 && mainPosition <= 1800) {       
+     if (mainPosition > 290 && mainPosition <= 2040) {       
         textExp.style.color = "white"; 
         textExp.style.fontSize = "17px"
     } else {
         textExp.style.color = "#D3D3D3"
         textExp.style.fontSize = "15px"
     }
-     if (mainPosition > 1800 && mainPosition <= 3231) {       
+     if (mainPosition > 2040 && mainPosition <= 3400) {       
         textEducationCourses.style.color = "white"; 
         textEducationCourses.style.fontSize = "17px"
     } else {
         textEducationCourses.style.color = "#D3D3D3"
         textEducationCourses.style.fontSize = "15px"
     }
-     if (mainPosition > 3231) {       
+     if (mainPosition > 3400) {       
         textLanguages.style.color = "white"; 
         textLanguages.style.fontSize = "17px"
     } else {
@@ -75,19 +75,19 @@ function checkSelectedSection() {
     }
     // Check if the hash matches the id of the target section
     if (hash === "#experience") {    
-        main.scrollTop = 307   
+        main.scrollTop = 565  
         applyStylesToElement(textExp, "white", "17px");        
     } else {
         applyStylesToElement(textExp, "#D3D3D3", "15px");    
     }
     if (hash === "#education-courses") {    
-        main.scrollTop = 2040
+        main.scrollTop = 2290
         applyStylesToElement(textEducationCourses, "white", "17px");
     } else {
         applyStylesToElement(textEducationCourses, "#D3D3D3", "15px");      
     }
     if (hash === "#languages") {    
-        main.scrollTop = 3232
+        main.scrollTop = 3402
         applyStylesToElement(textLanguages, "white", "17px");
     } else {
         applyStylesToElement(textLanguages, "#D3D3D3", "15px");      
@@ -105,7 +105,7 @@ checkSelectedSection();
 
 // Function to apply styles on hover
 function applyStylesOnHover(element) {
-    element.style.boxShadow = '0 0 10px rgba(255, 255, 255, 0.7)';
+    element.style.boxShadow = '0 -50px 50px -50px rgba(56, 64, 66, 0.7), 0 50px 50px -50px rgba(56, 64, 66, 0.7)';
  
     var titles = element.querySelectorAll('.p-title-size');
   
@@ -122,13 +122,13 @@ function applyStylesOnHover(element) {
     };
 
     var skills = element.querySelectorAll('.skills li');
-    applyStyles(skills, 'rgba(135, 206, 235, 0.5)');
-    
+    applyStyles(skills, 'rgba(135, 206, 235, 1)');    
+
     var skillsLang = element.querySelectorAll('.skills-lang');
-    applyStyles(skillsLang, 'rgba(112, 148, 221, 0.5)');
+    applyStyles(skillsLang, 'rgba(112, 148, 221, 1)');
 
     var img = element.querySelectorAll('img');
-    applyStyles(img, 'rgba(135, 206, 235, 0.8)');
+    applyStyles(img, 'rgba(56, 64, 66, 0.8)');
 
 }
 
@@ -139,7 +139,7 @@ function removeStylesOnHover(element) {
     var titles = element.querySelectorAll('.p-title-size');
   
     titles.forEach(function (title) {
-        title.style.color = '#EAEAEA';
+        title.style.color = '#384042';
         title.style.fontWeight = "normal"; 
     });  
 
@@ -202,6 +202,42 @@ var container = document.querySelector('.slider'),
     btnLeft.addEventListener("click", function(){       
         container.scrollLeft -= container.offsetWidth
     })
+
+var slides = document.querySelectorAll('.slide');
+var dotsContainer = document.querySelector('.dots');
+
+// Create dots
+slides.forEach((slide, index) => {
+  var dot = document.createElement('div');
+  dot.classList.add('dot');
+  dot.addEventListener('click', () => changeSlide(index));
+  dotsContainer.appendChild(dot);
+});
+
+var currentSlide = 0;
+changeSlide(currentSlide);
+
+function changeSlide(slideIndex) {
+  slides.forEach((slide, index) => {
+    slide.style.display = index === slideIndex ? 'block' : 'none';
+    dotsContainer.children[index].classList.toggle('active', index === slideIndex);
+  });
+  currentSlide = slideIndex;
+}
+
+//Connects the left and right arrows  to the dots
+var btnLeft = document.getElementById('btn-left');
+var btnRight = document.getElementById('btn-right');
+
+btnLeft.addEventListener('click', function() {
+  currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+  changeSlide(currentSlide);
+});
+
+btnRight.addEventListener('click', function() {
+  currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+  changeSlide(currentSlide);
+});
     
 //------------------------------------For Mobile--------------------------------------------
 
