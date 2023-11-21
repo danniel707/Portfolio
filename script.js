@@ -252,29 +252,30 @@ var experienceSpan = document.getElementById("experience-span");
 var educationCoursesSpan = document.getElementById("education-courses-span");
 var languageSpan = document.getElementById("language-span");
 
+
 // Function to show/hide spans based on section visibility
 function toggleSpansVisibility() {
     var rectAbout = aboutSection.getBoundingClientRect();
     var rectExperience = experienceSection.getBoundingClientRect();
     var rectEdCourses = educationCoursesSection.getBoundingClientRect();
     var rectLanguages = languageSection.getBoundingClientRect();
-   console.log("aboutSpan")
-  if (rectAbout.bottom > 230) {   
+    console.log(rectLanguages.bottom)
+  if (rectLanguages.bottom >= 4254) {   
     aboutSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     aboutSpan.style.display = "none"; // Hide spans
   }
-  if (2012 > rectExperience.bottom && rectExperience.bottom > 248) {   
+  if (4254 > rectLanguages.bottom && rectLanguages.bottom >= 2568) {   
     experienceSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     experienceSpan.style.display = "none"; // Hide spans
   }
-  if (2160 > rectEdCourses.bottom && rectEdCourses.bottom > 248) {   
+  if (2568 > rectLanguages.bottom && rectLanguages.bottom >= 882) {   
     educationCoursesSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     educationCoursesSpan.style.display = "none"; // Hide spans
   }
-  if (910 > rectLanguages.bottom ) {   
+  if (882 > rectLanguages.bottom ) {   
     languageSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     languageSpan.style.display = "none"; // Hide spans
@@ -284,8 +285,7 @@ function toggleSpansVisibility() {
 var main = document.querySelector("main")
 
 function checkScreenWidth() {
-  if (window.innerWidth <= 768) {
-   console.log("enter")
+  if (window.innerWidth <= 768) {   
     // Attach the event listener to the window object
     main.addEventListener("scroll", function () {
         toggleSpansVisibility();
