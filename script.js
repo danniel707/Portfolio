@@ -130,6 +130,25 @@ function applyStylesOnHover(element) {
     var img = element.querySelectorAll('img');
     applyStyles(img, 'rgba(56, 64, 66, 0.8)');
 
+
+    var arrows = element.querySelectorAll('.fa-square-up-right');
+   
+    arrows.forEach(function (arrow) {
+        arrow.style.color = '#87CEEB';        
+    });
+
+    var certificates = element.querySelectorAll('.certificate');
+
+    certificates.forEach(function (certificate) {
+        certificate.style.opacity = '1';
+    })
+
+    var logos = element.querySelectorAll('.logo img');
+
+    logos.forEach(function (logo) {
+        logo.style.opacity = '1'
+    })
+
 }
 
 // Function to remove styles when not hovering
@@ -157,6 +176,24 @@ function removeStylesOnHover(element) {
 
     var img = element.querySelectorAll('img');
     removeStyles(img);
+
+    var arrows = element.querySelectorAll('.fa-square-up-right')
+
+    arrows.forEach(function (arrow) {
+        arrow.style.color = '#384042'
+    });
+
+    var certificates = element.querySelectorAll('.certificate');
+
+    certificates.forEach(function (certificate) {
+        certificate.style.opacity = '0.7';
+    })
+
+    var logos = element.querySelectorAll('.logo img');
+
+    logos.forEach(function (logo) {
+        logo.style.opacity = '0.7'
+    })
 }
 
 // Get all elements with the class .containers
@@ -259,7 +296,8 @@ function toggleSpansVisibility() {
     var rectExperience = experienceSection.getBoundingClientRect();
     var rectEdCourses = educationCoursesSection.getBoundingClientRect();
     var rectLanguages = languageSection.getBoundingClientRect();
-    console.log(rectLanguages.bottom)
+    //console.log(rectLanguages.bottom)
+    //rectLanguages for all the spans
   if (rectLanguages.bottom >= 4254) {   
     aboutSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
