@@ -591,6 +591,12 @@ ul.course-topics li{
 	margin-bottom: 30px;
 }
 
+.language img {
+	width: 60px;
+	height: 50px;
+	border-radius: 10px;
+	opacity: 0.5;
+}
 
 
 footer{

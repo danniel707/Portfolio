@@ -75,19 +75,19 @@ function checkSelectedSection() {
     }
     // Check if the hash matches the id of the target section
     if (hash === "#experience") {    
-        main.scrollTop = 565  
+        main.scrollTop = 600  
         applyStylesToElement(textExp, "white", "17px");        
     } else {
         applyStylesToElement(textExp, "#D3D3D3", "15px");    
     }
     if (hash === "#education-courses") {    
-        main.scrollTop = 2290
+        main.scrollTop = 2342
         applyStylesToElement(textEducationCourses, "white", "17px");
     } else {
         applyStylesToElement(textEducationCourses, "#D3D3D3", "15px");      
     }
     if (hash === "#languages") {    
-        main.scrollTop = 3402
+        main.scrollTop = 3836
         applyStylesToElement(textLanguages, "white", "17px");
     } else {
         applyStylesToElement(textLanguages, "#D3D3D3", "15px");      
@@ -105,8 +105,9 @@ checkSelectedSection();
 
 // Function to apply styles on hover
 function applyStylesOnHover(element) {
+    //Container shadow
     element.style.boxShadow = '0 -50px 50px -50px rgba(56, 64, 66, 0.7), 0 50px 50px -50px rgba(56, 64, 66, 0.7)';
- 
+    
     var titles = element.querySelectorAll('.p-title-size');
   
     titles.forEach(function (title) {
@@ -130,7 +131,6 @@ function applyStylesOnHover(element) {
     var img = element.querySelectorAll('img');
     applyStyles(img, 'rgba(56, 64, 66, 0.8)');
 
-
     var arrows = element.querySelectorAll('.fa-square-up-right');
    
     arrows.forEach(function (arrow) {
@@ -147,6 +147,12 @@ function applyStylesOnHover(element) {
 
     logos.forEach(function (logo) {
         logo.style.opacity = '1'
+    })
+
+    var flags = element.querySelectorAll('.language img');
+
+    flags.forEach(function (flag) {
+        flag.style.opacity = '1'
     })
 
 }
@@ -193,6 +199,12 @@ function removeStylesOnHover(element) {
 
     logos.forEach(function (logo) {
         logo.style.opacity = '0.7'
+    })
+
+    var flags = element.querySelectorAll('.language img');
+
+    flags.forEach(function (flag) {
+        flag.style.opacity = '0.5'
     })
 }
 
@@ -296,7 +308,7 @@ function toggleSpansVisibility() {
     var rectExperience = experienceSection.getBoundingClientRect();
     var rectEdCourses = educationCoursesSection.getBoundingClientRect();
     var rectLanguages = languageSection.getBoundingClientRect();
-    console.log(rectLanguages.bottom)
+    //console.log(rectLanguages.bottom)
     //rectLanguages for all the spans
   if (rectLanguages.bottom >= 4930) {   
     aboutSpan.style.display = "inline-block"; // Show spans as inline-block
