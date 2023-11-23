@@ -160,11 +160,10 @@ p {
 }
 
 .about-p {	
-	padding: 0px;
-	width: 100%;
-	margin-bottom: 10px;
-	line-height: 1.5;
-	margin-left: 20px;
+	padding: 15px;
+	padding-bottom: 0px;
+	padding-top: 0px;	
+	line-height: 1.5;	
 	color: #384042;
 }
 
@@ -179,7 +178,8 @@ p {
 	margin-bottom: 30px;
 	padding: 15px;
 	padding-bottom: 5px;	
-    border-radius: 0px;   
+    border-radius: 25px;  
+    border-top-left-radius: 0px; 
     transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -213,13 +213,17 @@ p {
 	color: #384042;
 }
 
+.p-content-margin {
+	margin-bottom: 10px;
+}
+
 .p-locations{
-	color: #B7B7B7;
+	color: #868686;
 }
 
 .fa-location-dot{
 	padding-left: 10px;
-	color: #D3D3D3;
+	color: #868686;
 }
 
 .skills-projects{
@@ -596,7 +600,7 @@ footer{
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
 
 	.wraper {
 		display: flex;
@@ -682,7 +686,7 @@ footer{
 		
     	box-sizing: border-box;
 		margin: 0px;		
-		padding: 0px;
+		padding: 10px;
 		padding-top: 20px;
 		border-radius: 25px;
 	}
@@ -700,8 +704,8 @@ footer{
 	}
 
 	.about-p {
-		text-align: justify;
-		margin-right: 15px;
+		text-align: justify;		
+		box-sizing: border-box;
 	}
 
 	#experience {

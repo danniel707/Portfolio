@@ -296,24 +296,24 @@ function toggleSpansVisibility() {
     var rectExperience = experienceSection.getBoundingClientRect();
     var rectEdCourses = educationCoursesSection.getBoundingClientRect();
     var rectLanguages = languageSection.getBoundingClientRect();
-    //console.log(rectLanguages.bottom)
+    console.log(rectLanguages.bottom)
     //rectLanguages for all the spans
-  if (rectLanguages.bottom >= 4254) {   
+  if (rectLanguages.bottom >= 4930) {   
     aboutSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     aboutSpan.style.display = "none"; // Hide spans
   }
-  if (4254 > rectLanguages.bottom && rectLanguages.bottom >= 2568) {   
+  if (4930 > rectLanguages.bottom && rectLanguages.bottom >= 3240) {   
     experienceSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     experienceSpan.style.display = "none"; // Hide spans
   }
-  if (2568 > rectLanguages.bottom && rectLanguages.bottom >= 882) {   
+  if (3240 > rectLanguages.bottom && rectLanguages.bottom >= 866) {   
     educationCoursesSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     educationCoursesSpan.style.display = "none"; // Hide spans
   }
-  if (882 > rectLanguages.bottom ) {   
+  if (866 > rectLanguages.bottom ) {   
     languageSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     languageSpan.style.display = "none"; // Hide spans
