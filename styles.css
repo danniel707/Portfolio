@@ -689,10 +689,11 @@ footer{
 
 
 	main {
-		
+		max-width: 100%;
+		overflow-x: auto;
     	box-sizing: border-box;
 		margin: 0px;		
-		padding: 10px;
+		padding: 0px;
 		padding-top: 20px;
 		border-radius: 25px;
 	}
