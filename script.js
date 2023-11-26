@@ -75,13 +75,13 @@ function checkSelectedSection() {
     }
     // Check if the hash matches the id of the target section
     if (hash === "#experience") {    
-        main.scrollTop = 600  
+        main.scrollTop = 500  
         applyStylesToElement(textExp, "white", "17px");        
     } else {
         applyStylesToElement(textExp, "#D3D3D3", "15px");    
     }
     if (hash === "#education-courses") {    
-        main.scrollTop = 2342
+        main.scrollTop = 2150
         applyStylesToElement(textEducationCourses, "white", "17px");
     } else {
         applyStylesToElement(textEducationCourses, "#D3D3D3", "15px");      

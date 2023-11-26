@@ -690,7 +690,7 @@ footer{
 
 	main {
 		max-width: 100%;
-		overflow-x: auto;
+		overflow-x: auto;/*to avoid hidding behind the window*/
     	box-sizing: border-box;
 		margin: 0px;		
 		padding: 0px;
