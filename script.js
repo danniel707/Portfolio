@@ -30,7 +30,7 @@ var message = document.getElementById("message")
 main.addEventListener("scroll", function () {
     // Get the current scroll position
     var mainPosition = main.scrollTop;   
-    //message.innerText = mainPosition.toFixed(1);
+    message.innerText = mainPosition.toFixed(1);
     // Select the text element by its ID
     if (mainPosition <= 290) {       
         textAbout.style.color = "white"; 
