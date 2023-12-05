@@ -30,7 +30,7 @@ var message = document.getElementById("message")
 main.addEventListener("scroll", function () {
     // Get the current scroll position
     var mainPosition = main.scrollTop;   
-    message.innerText = mainPosition.toFixed(1);
+    //message.innerText = mainPosition.toFixed(1);
     // Select the text element by its ID
     if (mainPosition <= 290) {       
         textAbout.style.color = "white"; 
@@ -111,8 +111,8 @@ function applyStylesOnHover(element) {
     var titles = element.querySelectorAll('.p-title-size');
   
     titles.forEach(function (title) {
-        title.style.color = '#87CEEB';
-        title.style.fontWeight = "500"; 
+        title.style.color = '#5FAFD0';
+        title.style.fontWeight = "600"; 
     });
      
     
@@ -134,7 +134,7 @@ function applyStylesOnHover(element) {
     var arrows = element.querySelectorAll('.fa-square-up-right');
    
     arrows.forEach(function (arrow) {
-        arrow.style.color = '#87CEEB';        
+        arrow.style.color = '#5FAFD0';        
     });
 
     var certificates = element.querySelectorAll('.certificate');
