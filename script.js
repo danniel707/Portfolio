@@ -39,21 +39,21 @@ main.addEventListener("scroll", function () {
         textAbout.style.color = "#D3D3D3"
         textAbout.style.fontSize = "15px"
     }
-     if (mainPosition > 290 && mainPosition <= 2040) {       
+     if (mainPosition > 290 && mainPosition <= 1864) {       
         textExp.style.color = "white"; 
         textExp.style.fontSize = "17px"
     } else {
         textExp.style.color = "#D3D3D3"
         textExp.style.fontSize = "15px"
     }
-     if (mainPosition > 2040 && mainPosition <= 3400) {       
+     if (mainPosition > 1864 && mainPosition <= 3630) {       
         textEducationCourses.style.color = "white"; 
         textEducationCourses.style.fontSize = "17px"
     } else {
         textEducationCourses.style.color = "#D3D3D3"
         textEducationCourses.style.fontSize = "15px"
     }
-     if (mainPosition > 3400) {       
+     if (mainPosition > 3630) {       
         textLanguages.style.color = "white"; 
         textLanguages.style.fontSize = "17px"
     } else {
@@ -75,19 +75,19 @@ function checkSelectedSection() {
     }
     // Check if the hash matches the id of the target section
     if (hash === "#experience") {    
-        main.scrollTop = 565  
+        main.scrollTop = 500  
         applyStylesToElement(textExp, "white", "17px");        
     } else {
         applyStylesToElement(textExp, "#D3D3D3", "15px");    
     }
     if (hash === "#education-courses") {    
-        main.scrollTop = 2290
+        main.scrollTop = 2092
         applyStylesToElement(textEducationCourses, "white", "17px");
     } else {
         applyStylesToElement(textEducationCourses, "#D3D3D3", "15px");      
     }
     if (hash === "#languages") {    
-        main.scrollTop = 3402
+        main.scrollTop = 3836
         applyStylesToElement(textLanguages, "white", "17px");
     } else {
         applyStylesToElement(textLanguages, "#D3D3D3", "15px");      
@@ -105,8 +105,9 @@ checkSelectedSection();
 
 // Function to apply styles on hover
 function applyStylesOnHover(element) {
+    //Container shadow
     element.style.boxShadow = '0 -50px 50px -50px rgba(56, 64, 66, 0.7), 0 50px 50px -50px rgba(56, 64, 66, 0.7)';
- 
+    
     var titles = element.querySelectorAll('.p-title-size');
   
     titles.forEach(function (title) {
@@ -129,6 +130,30 @@ function applyStylesOnHover(element) {
 
     var img = element.querySelectorAll('img');
     applyStyles(img, 'rgba(56, 64, 66, 0.8)');
+
+    var arrows = element.querySelectorAll('.fa-square-up-right');
+   
+    arrows.forEach(function (arrow) {
+        arrow.style.color = '#87CEEB';        
+    });
+
+    var certificates = element.querySelectorAll('.certificate');
+
+    certificates.forEach(function (certificate) {
+        certificate.style.opacity = '1';
+    })
+
+    var logos = element.querySelectorAll('.logo img');
+
+    logos.forEach(function (logo) {
+        logo.style.opacity = '1'
+    })
+
+    var flags = element.querySelectorAll('.language img');
+
+    flags.forEach(function (flag) {
+        flag.style.opacity = '1'
+    })
 
 }
 
@@ -157,6 +182,30 @@ function removeStylesOnHover(element) {
 
     var img = element.querySelectorAll('img');
     removeStyles(img);
+
+    var arrows = element.querySelectorAll('.fa-square-up-right')
+
+    arrows.forEach(function (arrow) {
+        arrow.style.color = '#384042'
+    });
+
+    var certificates = element.querySelectorAll('.certificate');
+
+    certificates.forEach(function (certificate) {
+        certificate.style.opacity = '0.7';
+    })
+
+    var logos = element.querySelectorAll('.logo img');
+
+    logos.forEach(function (logo) {
+        logo.style.opacity = '0.7'
+    })
+
+    var flags = element.querySelectorAll('.language img');
+
+    flags.forEach(function (flag) {
+        flag.style.opacity = '0.5'
+    })
 }
 
 // Get all elements with the class .containers
@@ -259,23 +308,24 @@ function toggleSpansVisibility() {
     var rectExperience = experienceSection.getBoundingClientRect();
     var rectEdCourses = educationCoursesSection.getBoundingClientRect();
     var rectLanguages = languageSection.getBoundingClientRect();
-    console.log(rectLanguages.bottom)
-  if (rectLanguages.bottom >= 4254) {   
+    //console.log(rectLanguages.bottom)
+    //rectLanguages for all the spans
+  if (rectLanguages.bottom >= 5370) {   
     aboutSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     aboutSpan.style.display = "none"; // Hide spans
   }
-  if (4254 > rectLanguages.bottom && rectLanguages.bottom >= 2568) {   
+  if (5370 > rectLanguages.bottom && rectLanguages.bottom >= 3670) {   
     experienceSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     experienceSpan.style.display = "none"; // Hide spans
   }
-  if (2568 > rectLanguages.bottom && rectLanguages.bottom >= 882) {   
+  if (3670 > rectLanguages.bottom && rectLanguages.bottom >= 947) {   
     educationCoursesSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     educationCoursesSpan.style.display = "none"; // Hide spans
   }
-  if (882 > rectLanguages.bottom ) {   
+  if (947 > rectLanguages.bottom ) {   
     languageSpan.style.display = "inline-block"; // Show spans as inline-block
   } else {
     languageSpan.style.display = "none"; // Hide spans
