@@ -25,35 +25,35 @@ var textAbout = document.getElementById("menu-about");
 var textExp = document.getElementById("menu-exp");
 var textEducationCourses = document.getElementById("menu-education-courses");
 var textLanguages = document.getElementById("menu-languages")
-var message = document.getElementById("message")
+//var message = document.getElementById("message")
 //When scrolling
 main.addEventListener("scroll", function () {
     // Get the current scroll position
     var mainPosition = main.scrollTop;   
-    //message.innerText = mainPosition.toFixed(1);
+    message.innerText = mainPosition.toFixed(1);
     // Select the text element by its ID
-    if (mainPosition <= 290) {       
+    if (mainPosition <= 495) {       
         textAbout.style.color = "white"; 
         textAbout.style.fontSize = "17px"
     } else {
         textAbout.style.color = "#D3D3D3"
         textAbout.style.fontSize = "15px"
     }
-     if (mainPosition > 290 && mainPosition <= 1864) {       
+     if (mainPosition > 495 && mainPosition <= 2200) {       
         textExp.style.color = "white"; 
         textExp.style.fontSize = "17px"
     } else {
         textExp.style.color = "#D3D3D3"
         textExp.style.fontSize = "15px"
     }
-     if (mainPosition > 1864 && mainPosition <= 3630) {       
+     if (mainPosition > 2200 && mainPosition <= 3850) {       
         textEducationCourses.style.color = "white"; 
         textEducationCourses.style.fontSize = "17px"
     } else {
         textEducationCourses.style.color = "#D3D3D3"
         textEducationCourses.style.fontSize = "15px"
     }
-     if (mainPosition > 3630) {       
+     if (mainPosition > 3850) {       
         textLanguages.style.color = "white"; 
         textLanguages.style.fontSize = "17px"
     } else {
@@ -81,13 +81,13 @@ function checkSelectedSection() {
         applyStylesToElement(textExp, "#D3D3D3", "15px");    
     }
     if (hash === "#education-courses") {    
-        main.scrollTop = 2092
+        main.scrollTop = 2348
         applyStylesToElement(textEducationCourses, "white", "17px");
     } else {
         applyStylesToElement(textEducationCourses, "#D3D3D3", "15px");      
     }
     if (hash === "#languages") {    
-        main.scrollTop = 3836
+        main.scrollTop = 3950
         applyStylesToElement(textLanguages, "white", "17px");
     } else {
         applyStylesToElement(textLanguages, "#D3D3D3", "15px");      
