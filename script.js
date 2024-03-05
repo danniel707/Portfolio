@@ -25,12 +25,12 @@ var textAbout = document.getElementById("menu-about");
 var textExp = document.getElementById("menu-exp");
 var textEducationCourses = document.getElementById("menu-education-courses");
 var textLanguages = document.getElementById("menu-languages")
-//var message = document.getElementById("message")
+var message = document.getElementById("message")
 //When scrolling
 main.addEventListener("scroll", function () {
     // Get the current scroll position
     var mainPosition = main.scrollTop;   
-    message.innerText = mainPosition.toFixed(1);
+    //message.innerText = mainPosition.toFixed(1);
     // Select the text element by its ID
     if (mainPosition <= 495) {       
         textAbout.style.color = "white"; 
@@ -106,8 +106,9 @@ checkSelectedSection();
 // Function to apply styles on hover
 function applyStylesOnHover(element) {
     //Container shadow
-    element.style.boxShadow = '0 -50px 50px -50px rgba(56, 64, 66, 0.7), 0 50px 50px -50px rgba(56, 64, 66, 0.7)';
-    
+    if (window.innerWidth > 768) {
+        element.style.boxShadow = '0 -50px 50px -50px rgba(56, 64, 66, 0.7), 0 50px 50px -50px rgba(56, 64, 66, 0.7)';
+    }
     var titles = element.querySelectorAll('.p-title-size');
   
     titles.forEach(function (title) {
@@ -210,16 +211,20 @@ function removeStylesOnHover(element) {
 
 // Get all elements with the class .containers
 var  containersElements = document.querySelectorAll('.containers');
-
+    
 // Add event listeners for mouseover and mouseout events to each element
- containersElements.forEach(function (element) {
-    element.addEventListener('mouseover', function (event) {
-        applyStylesOnHover(event.currentTarget);
+if (window.innerWidth > 768) {
+    containersElements.forEach(function (element) {
+
+        element.addEventListener('mouseover', function (event) {
+            applyStylesOnHover(event.currentTarget);
+        });
+
+        element.addEventListener('mouseout', function (event) {
+            removeStylesOnHover(event.currentTarget);
+        });
     });
-    element.addEventListener('mouseout', function (event) {
-        removeStylesOnHover(event.currentTarget);
-    });
-});
+}
 
 
 //------------------------------------Modal------------------------------
@@ -308,7 +313,7 @@ function toggleSpansVisibility() {
     var rectExperience = experienceSection.getBoundingClientRect();
     var rectEdCourses = educationCoursesSection.getBoundingClientRect();
     var rectLanguages = languageSection.getBoundingClientRect();
-    //console.log(rectLanguages.bottom)
+    console.log(rectLanguages.bottom)
     //rectLanguages for all the spans
   if (rectLanguages.bottom >= 5370) {   
     aboutSpan.style.display = "inline-block"; // Show spans as inline-block
@@ -340,8 +345,15 @@ function checkScreenWidth() {
     main.addEventListener("scroll", function () {
         toggleSpansVisibility();
     })
-    toggleSpansVisibility();        
-  }
+    toggleSpansVisibility();    
+
+    var containersElements = document.querySelectorAll('.containers');
+
+        // Apply styles to each div
+        containersElements.forEach(function (element) {    
+            applyStylesOnHover(element);
+        });    
+    }
 
 }
 
