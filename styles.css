@@ -233,6 +233,7 @@ p {
 .skills-projects{
 	justify-content: space-between;	
 	display: flex;
+	
 }
 
 .skills{
@@ -255,12 +256,14 @@ p {
 	background-color: #7094DD !important;
 }
 
-.link-news-agg{		
-  	
+.link-sites{		
+	display: flex;
+  	flex-direction: column;   
+ 
 }
 
-#linkNewsAggBtn {
-	width: 100px;	
+.link-site {
+	width: 130px;	
 	padding: 0.3em 1em;
 	font-size: 0.9em;
 	cursor: pointer;	
@@ -274,7 +277,7 @@ p {
 	
 }
 
-#linkNewsAggBtn:hover {
+.link-site:hover {
 	background-color: #389BC3;
 }
 
